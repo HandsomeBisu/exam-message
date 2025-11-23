@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
-import Button from './Button';
-import { CardColor, EMOJI_OPTIONS } from '../types';
+import Button from './Button.tsx';
+import { CardColor, EMOJI_OPTIONS } from '../types.ts';
 
 interface WriteModalProps {
   isOpen: boolean;

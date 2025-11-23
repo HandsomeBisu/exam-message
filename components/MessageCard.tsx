@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CheerMessage } from '../types';
+import { CheerMessage } from '../types.ts';
 import { Heart } from 'lucide-react';
 
 interface MessageCardProps {

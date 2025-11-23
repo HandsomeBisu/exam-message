@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { MessageCircle, Trophy, Users } from 'lucide-react';
 import { collection, addDoc, onSnapshot, query, orderBy, doc, updateDoc, increment } from 'firebase/firestore';
-import MessageCard from './components/MessageCard';
-import WriteModal from './components/WriteModal';
-import Button from './components/Button';
-import { CheerMessage } from './types';
-import { db } from './services/firebase';
+import MessageCard from './components/MessageCard.tsx';
+import WriteModal from './components/WriteModal.tsx';
+import Button from './components/Button.tsx';
+import { CheerMessage } from './types.ts';
+import { db } from './services/firebase.ts';
 
 const App = () => {
   const [messages, setMessages] = useState<CheerMessage[]>([]);
